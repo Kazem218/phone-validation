@@ -20,7 +20,6 @@ app.post('/validate', async (req, res) => {
 
   try {
     const response = await axios.get(`https://api.numlookupapi.com/v1/validate/${mobileNumber}?apikey=${process.env.NUMLOOKUP_API_KEY}`);
-
     if (!response.data.valid) {
       return res.status(400).json({ error: 'Invalid mobile number' });
     }
