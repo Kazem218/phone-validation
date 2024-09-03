@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "router-dom": "^2.2.11"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

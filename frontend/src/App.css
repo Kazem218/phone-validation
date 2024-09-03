@@ -1,0 +1,101 @@
+body {
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 0; 
+  font-family: Arial, sans-serif; 
+}
+
+.table-container {
+  background-color: #ffffff; /* White background */
+  padding: 20px; /* Padding around the table */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  margin: 20px auto; /* Center the table with some margin */
+  max-width: 100%; /* Responsive width */
+}
+
+.table-responsive {
+  overflow-x: auto; /* Allows horizontal scrolling on small screens */
+}
+
+.table {
+  margin-bottom: 0; /* Remove the default margin below the table */
+}
+
+.table th,
+.table td {
+  vertical-align: middle; /* Center content vertically */
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .btn {
+    font-size: 14px; /* Adjust button font size for smaller screens */
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* src/App.css */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.close-button {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: right;
+}
+
